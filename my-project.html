@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<!-- INCLUDE MY FIRST COMPONENT -->
+<link rel="import" href="components/my-first-component/my-first-component.html">
+
+<!-- INCLUDE MY PROJECT SHARED STYLE -->
+<link rel="import" href="my-project-shared-styles.html">
+
+<dom-module id="my-project">
+  <template>
+    <style include="my-project-shared-styles">
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+
+    <!-- INCLUDED MY FIRST COMPONENT -->
+    <my-first-component></my-first-component>
+
+
+  </template>
+
+  <script>
+    /**
+     * `my-project`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MyProject extends Polymer.Element {
+      static get is() { return 'my-project'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'my-project'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MyProject.is, MyProject);
+  </script>
+</dom-module>
