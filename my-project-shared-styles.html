@@ -1,9 +1,61 @@
-<dom-module id="my-project-shared-styles">
-    <template>
-        <style>
-            html {
-                
+<link rel="import" href="../paper-styles/paper-styles.html">
+
+<custom-style>
+    <style is="custom-style">
+        html {
+            @apply --paper-font-common-base;
+
+            /* --paper-font-common-base: {
+                font-family: Arial, Helvetica, sans-serif;
             }
-        </style>
-    </template>
-</dom-module>
+            ; */
+
+
+
+            /* PROJECT VARIABLES */
+            --primary-text-color: #2f2f2f;
+            --primary-background-color: gray;
+            --secondary-text-color: blue;
+            --disabled-text-color: lightgrey;
+            --error-color: darkred;
+
+
+
+            /* PAPER CARD */
+            --paper-card-background-color: #FFF;
+            --paper-card-header-color: ;
+            --paper-card-header: {
+                /* MIXIN */
+            };
+            --paper-card-content: {
+                /* MIXIN */
+            };
+            --paper-card: {
+                display: block;
+                margin-bottom: 30px;
+            };
+
+
+
+            /* BUTTON */
+            --paper-button-ink-color: black;
+            --paper-button: {
+                /* MIXIN */
+                background-color: purple;
+                color: #fff;
+            };
+            --paper-button-disabled: {
+                /* MIXIN */
+            };
+
+
+
+            /* SPINNER */
+            --paper-spinner-stroke-width: 5px;
+
+            /* LITE SPINNER */
+            --paper-spinner-color: green;
+
+        }
+    </style>
+</custom-style>

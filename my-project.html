@@ -1,4 +1,8 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<link rel="import" href="../paper-spinner/paper-spinner.html">
+<link rel="import" href="../paper-spinner/paper-spinner-lite.html">
+<link rel="import" href="../paper-card/paper-card.html">
 
 <!-- INCLUDE MY FIRST COMPONENT -->
 <link rel="import" href="components/my-first-component/my-first-component.html">
@@ -8,15 +12,43 @@
 
 <dom-module id="my-project">
   <template>
-    <style include="my-project-shared-styles">
+    <style is="custom-style">
       :host {
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+
+    <h2>My project elements</h2>
+
+    <!-- CARD 1 -->
+    <paper-card heading="paper button" image="" elevation="1" animated-shadow="false">
+      <div class="card-content">
+
+        <paper-button>button</paper-button>
+
+      </div>
+    </paper-card>
+    
+    <!-- CARD 2 -->
+    <paper-card heading="paper spinner" image="" elevation="1" animated-shadow="false">
+      <div class="card-content">
+
+        <h3>Default spinner</h3>
+        <paper-spinner active></paper-spinner>
+
+        <h3>Lite spinner</h3>
+        <paper-spinner-lite active></paper-spinner-lite>
+
+      </div>
+    </paper-card>
+    
+    
 
     <!-- INCLUDED MY FIRST COMPONENT -->
     <my-first-component></my-first-component>
+
+
+
 
 
   </template>
