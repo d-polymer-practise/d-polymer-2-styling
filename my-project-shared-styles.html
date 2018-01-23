@@ -1,14 +1,23 @@
-<link rel="import" href="../paper-styles/paper-styles.html">
-
 <custom-style>
     <style is="custom-style">
         html {
+
+            /* APPLICATION BASE FONT FAMILY */
             @apply --paper-font-common-base;
 
+            /* YOU CAN OVERRIDE THIS MIXIN TO USE NEW FONT FAMILY*/
             /* --paper-font-common-base: {
                 font-family: Arial, Helvetica, sans-serif;
             }
             ; */
+
+
+
+            /* APPLICATION BASE FONT SIZE */
+            @apply --paper-font-body2;
+            /* 14PX / 500 */
+            @apply --paper-font-body1;
+            /* 14PX / 400 *
 
 
 
@@ -21,41 +30,57 @@
 
 
 
-            /* PAPER CARD */
+            /* COMPONENT PAPER CARD */
             --paper-card-background-color: #FFF;
-            --paper-card-header-color: ;
+            --paper-card-header-color: green;
             --paper-card-header: {
                 /* MIXIN */
-            };
+            }
+            ;
             --paper-card-content: {
                 /* MIXIN */
-            };
+            }
+            ;
             --paper-card: {
                 display: block;
                 margin-bottom: 30px;
-            };
+            }
+            ;
 
 
 
-            /* BUTTON */
+            /* COMPONENT BUTTON */
             --paper-button-ink-color: black;
             --paper-button: {
                 /* MIXIN */
                 background-color: purple;
                 color: #fff;
-            };
+            }
+            ;
             --paper-button-disabled: {
                 /* MIXIN */
-            };
+            }
+            ;
 
 
 
-            /* SPINNER */
+            /* COMPONENT SPINNER */
             --paper-spinner-stroke-width: 5px;
 
-            /* LITE SPINNER */
+            /* COMPONENT LITE SPINNER */
             --paper-spinner-color: green;
+        }
 
+        h1 {
+            @apply --paper-font-headline;
+        }
+
+        h2 {
+            @apply --paper-font-title;
+        }
+
+        h3 {
+            @apply --paper-font-subhead;
         }
     </style>
 </custom-style>

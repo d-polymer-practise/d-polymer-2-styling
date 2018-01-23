@@ -10,7 +10,9 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
     "paper-styles": "PolymerElements/paper-styles#^2.0.0",
     "paper-button": "PolymerElements/paper-button#^2.0.0",
-    "paper-spinner": "PolymerElements/paper-spinner#^2.0.0"
+    "paper-spinner": "PolymerElements/paper-spinner#^2.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^2.0.0",
+    "iron-icons": "PolymerElements/iron-icons#^2.0.0"
   },
   "resolutions": {
     "polymer": "^2.0.0"

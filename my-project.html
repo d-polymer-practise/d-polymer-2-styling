@@ -1,11 +1,10 @@
 <link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../paper-spinner/paper-spinner.html">
-<link rel="import" href="../paper-spinner/paper-spinner-lite.html">
 <link rel="import" href="../paper-card/paper-card.html">
+<link rel="import" href="../paper-spinner/paper-spinner-lite.html">
 
-<!-- INCLUDE MY FIRST COMPONENT -->
-<link rel="import" href="components/my-first-component/my-first-component.html">
+<link rel="import" href="../paper-styles/paper-styles.html">
 
 <!-- INCLUDE MY PROJECT SHARED STYLE -->
 <link rel="import" href="my-project-shared-styles.html">
@@ -13,7 +12,7 @@
 <dom-module id="my-project">
   <template>
     <style is="custom-style">
-      :host {
+       :host {
         display: block;
       }
     </style>
@@ -24,28 +23,18 @@
     <paper-card heading="paper button" image="" elevation="1" animated-shadow="false">
       <div class="card-content">
 
+        <h3>project spinner</h3>
+        <paper-spinner active></paper-spinner>
+
+        <h3>project Lite spinner</h3>
+        <paper-spinner-lite active></paper-spinner-lite>
+
+        <h3>project Button</h3>
         <paper-button>button</paper-button>
 
       </div>
     </paper-card>
-    
-    <!-- CARD 2 -->
-    <paper-card heading="paper spinner" image="" elevation="1" animated-shadow="false">
-      <div class="card-content">
 
-        <h3>Default spinner</h3>
-        <paper-spinner active></paper-spinner>
-
-        <h3>Lite spinner</h3>
-        <paper-spinner-lite active></paper-spinner-lite>
-
-      </div>
-    </paper-card>
-    
-    
-
-    <!-- INCLUDED MY FIRST COMPONENT -->
-    <my-first-component></my-first-component>
 
 
 
@@ -63,7 +52,9 @@
      * @demo demo/index.html
      */
     class MyProject extends Polymer.Element {
-      static get is() { return 'my-project'; }
+      static get is() {
+        return 'my-project';
+      }
       static get properties() {
         return {
           prop1: {
