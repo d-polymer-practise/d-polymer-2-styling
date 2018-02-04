@@ -1,6 +1,8 @@
 <link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../paper-spinner/paper-spinner.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
+<link rel="import" href="../iron-icons/editor-icons.html">
 <link rel="import" href="../paper-card/paper-card.html">
 <link rel="import" href="../paper-spinner/paper-spinner-lite.html">
 <link rel="import" href="../paper-styles/paper-styles.html">
@@ -16,34 +18,55 @@
     <style is="custom-style">
       :host {
         display: block;
+
+        /* COMPONENT PAPER CARD VARIABLES*/
+        --paper-card-background-color: var(--my-component-card-bg-color, yellow);
+        --paper-card-header-color: var(--my-component-card-header-color, red);
+        --paper-card-header: {
+          /* MIXIN */
+        }
+        ;
+      }
+
+      p {
+        @apply --paper-font-display1;
       }
     </style>
 
     <h2>My project elements</h2>
 
     <!-- CARD 1 -->
-    <paper-card heading="" image="" elevation="1" animated-shadow="false">
+    <paper-card heading="THIS IS CARD HEADING" image="" elevation="1" animated-shadow="false">
       <div class="card-content">
 
-        <h3>project spinner</h3>
+        <h3>Spinner</h3>
         <paper-spinner active></paper-spinner>
 
-        <h3>project Lite spinner</h3>
+        <h3>Lite spinner</h3>
         <paper-spinner-lite active></paper-spinner-lite>
 
-        <h3>project Button</h3>
+
+        <h3>Button</h3>
         <paper-button>button</paper-button>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod tempore ab ipsa labore
           voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
         </p>
+
+        <h3>Iron icons</h3>
+        <iron-icon icon="thumb-up"></iron-icon>
+        <iron-icon icon="star"></iron-icon>
+
+        <h3>Editor icons</h3>
+        <iron-icon icon="editor:attach-file"></iron-icon>
+        <iron-icon icon="editor:border-all"></iron-icon>
       </div>
     </paper-card>
 
 
     <!-- EXTERNAL COMPONENT -->
-    <my-first-component></my-first-component>
+    <!-- <my-first-component></my-first-component> -->
 
 
   </template>

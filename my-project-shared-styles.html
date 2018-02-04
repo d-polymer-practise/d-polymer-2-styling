@@ -38,6 +38,11 @@
                 /* MIXIN */
             }
             ;
+
+            /* OVERRIDE COMPONENT STYLE VARIABLE */
+            --my-component-card-bg-color: var(--paper-card-background-color);
+            --my-component-card-header-color: var(--paper-card-header-color);
+
             --paper-card-content: {
                 /* MIXIN */
             }
@@ -64,13 +69,26 @@
 
 
             /* COMPONENT SPINNER VARIABLES*/
-            --paper-spinner-stroke-width: 5px;
+            /* --paper-spinner-layer-1-color: ;
+            --paper-spinner-layer-2-color: ;
+            --paper-spinner-layer-3-color: ;
+            --paper-spinner-layer-4-color: ; */
+
+            --paper-spinner-stroke-width: 2px;
 
             /* COMPONENT LITE SPINNER VARIABLES*/
             --paper-spinner-color: green;
+
+
+            /* IRON ICON */
+            --iron-icon: { /* MIXIN */ };
+            --iron-icon-width: 50px;
+            --iron-icon-height: 50px;
+            --iron-icon-fill-color: orange;
+            --iron-icon-stroke-color: black;
         }
 
-        h1 {
+        /* h1 {
             @apply --paper-font-headline;
         }
 
@@ -80,7 +98,8 @@
 
         h3 {
             @apply --paper-font-subhead;
-        }
+        } */
+
 
     </style>
 </custom-style>
