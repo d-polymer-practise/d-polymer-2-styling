@@ -1,28 +1,27 @@
+
+<dom-module id="my-shared-styles">
 <custom-style>
     <style is="custom-style">
         html {
-
             /* APPLICATION BASE FONT FAMILY */
             @apply --paper-font-common-base;
 
-            /* YOU CAN OVERRIDE THIS MIXIN TO USE NEW FONT FAMILY*/
+            /* ---// YOU CAN OVERRIDE THIS MIXIN TO USE NEW FONT FAMILY ---// */
             /* --paper-font-common-base: {
                 font-family: Arial, Helvetica, sans-serif;
             }
             ; */
-            /* APPLICATION BASE FONT SIZE */
 
+
+            /* ---// APPLICATION BASE FONT SIZE ---// */
             @apply --paper-font-body1;
             /* 14PX / 400 */
 
             /* @apply --paper-font-body2; */
             /* 14PX / 500 */
 
-            
 
-
-
-            /* PROJECT COLOR VARIABLES */
+            /* ---// PROJECT COLOR VARIABLES ---// */
             --primary-text-color: #2f2f2f;
             --primary-background-color: gray;
             --secondary-text-color: blue;
@@ -31,7 +30,7 @@
 
 
 
-            /* COMPONENT PAPER CARD VARIABLES*/
+            /* ---// PAPER CARD VARIABLES ---// */
             --paper-card-background-color: #FFF;
             --paper-card-header-color: green;
             --paper-card-header: {
@@ -39,21 +38,28 @@
             }
             ;
 
-            /* OVERRIDE COMPONENT STYLE VARIABLE */
-            --my-component-card-bg-color: var(--paper-card-background-color);
-            --my-component-card-header-color: var(--paper-card-header-color);
-
             --paper-card-content: {
                 /* MIXIN */
             }
             ;
+
             --paper-card: {
                 display: block;
                 margin-bottom: 30px;
             }
             ;
 
-            /* COMPONENT BUTTON VARIABLES*/
+
+            /* ---// OVERRIDE COMPONENT STYLE VARIABLE ---// */
+            /* --my-card-bg-color: var(--paper-card-background-color);
+            --my-card-header-color: var(--paper-card-header-color); */
+
+            /* --my-card-bg-color: pink;
+            --my-card-header-color: purple; */
+
+            
+
+            /* ---// BUTTON VARIABLES ---// */
             --paper-button-ink-color: black;
             --paper-button: {
                 /* MIXIN */
@@ -61,14 +67,14 @@
                 color: #fff;
             }
             ;
-            --paper-button-disabled: {
-                /* MIXIN */
-            }
-            ;
+
+            /* ---// OVERRIDE COMPONENT BUTTON VARIABLE ---// */
+            /* --my-button-ink-color: ;
+            --my-button-bg-color: ; */
 
 
 
-            /* COMPONENT SPINNER VARIABLES*/
+            /* ---// SPINNER VARIABLES ---// */
             /* --paper-spinner-layer-1-color: ;
             --paper-spinner-layer-2-color: ;
             --paper-spinner-layer-3-color: ;
@@ -76,20 +82,24 @@
 
             --paper-spinner-stroke-width: 2px;
 
-            /* COMPONENT LITE SPINNER VARIABLES*/
+            /* ---// SPINNER LITE VARIABLES ---// */
             --paper-spinner-color: green;
 
 
-            /* IRON ICON */
-            --iron-icon: { /* MIXIN */ };
+            /* ---// IRON ICON ---// */
+            --iron-icon: {
+                /* MIXIN */
+            }
+            ;
             --iron-icon-width: 50px;
             --iron-icon-height: 50px;
             --iron-icon-fill-color: orange;
             --iron-icon-stroke-color: black;
         }
 
-        /* h1 {
+        h1 {
             @apply --paper-font-headline;
+            
         }
 
         h2 {
@@ -98,8 +108,23 @@
 
         h3 {
             @apply --paper-font-subhead;
-        } */
+        }
 
+        /* CUSTOM SPINNER SIZE */
+        .spinner-large {
+            width: 50px;
+            height: 50px;
+        }
 
+        .spinner-medium {
+            width: 30px;
+            height: 30px;
+        }
+
+        .spinner-small {
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </custom-style>
+</dom-module>
