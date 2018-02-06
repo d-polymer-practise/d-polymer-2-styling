@@ -5,7 +5,6 @@
 <link rel="import" href="../iron-icons/editor-icons.html">
 <link rel="import" href="../paper-card/paper-card.html">
 <link rel="import" href="../paper-spinner/paper-spinner-lite.html">
-<!-- <link rel="import" href="../paper-styles/paper-styles.html"> -->
 
 <!-- INCLUDE MY PROJECT SHARED STYLE -->
 <link rel="import" href="my-project-shared-styles.html">
@@ -17,7 +16,7 @@
         display: block;
 
         /* ---// COMPONENT PAPER CARD VARIABLES ---// */
-        --paper-card-background-color: var(--my-card-bg-color, yellow);
+        --paper-card-background-color: var(--my-card-bg-color, #fffdc9);
         --paper-card-header-color: var(--my-card-header-color, red);
         --paper-card-header: {
           /* MIXIN */
@@ -37,21 +36,26 @@
     <!-- CARD 1 -->
     <paper-card heading="THIS IS CARD HEADING">
       <div class="card-content">
+        <h1>H1 heading</h1>
+
+        <h2>H2 heading</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod tempore ab ipsa labore
+            voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
+          </p>
 
         <h3>Spinner - multi color</h3>
         <paper-spinner class="spinner-small" active></paper-spinner>
 
-        <!-- <h3>Lite spinner - single color</h3>
-        <paper-spinner-lite class="spinner-large" active></paper-spinner-lite> -->
+        <h3>Lite spinner - single color</h3>
+        <paper-spinner-lite class="spinner-large" active></paper-spinner-lite>
 
 
         <h3>Button</h3>
         <paper-button>button</paper-button>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod tempore ab ipsa labore
-          voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
-        </p>
+        
 
         <h3>Iron icons</h3>
         <iron-icon icon="thumb-up"></iron-icon>
@@ -63,9 +67,6 @@
       </div>
     </paper-card>
 
-
-    <!-- EXTERNAL COMPONENT -->
-    <!-- <my-first-component></my-first-component> -->
 
 
   </template>
