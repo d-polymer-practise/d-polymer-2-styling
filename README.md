@@ -51,11 +51,11 @@ Limitations of Preprocessors
 ```
 
 ```
-These limiations make a base to invent CSS Custom Properties by a community
+These limiations made a base to invent CSS Custom Properties by a community
 ```
 
 ```
-CSS Custom Properties uses simple -- (two hypens)
+CSS Custom Properties uses simple -- (two dash)
 - learn once and implement through all browsers
 - CSS variables is written as var()
 
@@ -66,8 +66,8 @@ CSS Custom Properties uses simple -- (two hypens)
 
 - CSS mixin
 --box: {
-    --box-color: #ff5678;
-    --box-padding: 10px;
+    padding: var(--box-padding, 10px);
+    color: var(--box-color, #ff0088);
 }
 
 - apply mixin
@@ -79,12 +79,12 @@ CSS Custom Properties uses simple -- (two hypens)
 ```
 Browser Support
 - All modern browsers support
-- But IE Edge fully support, older version does not have full support 
+- IE Edge fully support, but older version does not have full support 
 ```
 
 ```
 What is Polymer?
-Polymer is a library for creating Web Components. ... Instead, it focuses on allowing you to create rich, powerful, reusable web components, which could be used to build webapps
+Polymer is a JavaScript library that helps you create custom reusable HTML elements, and use them to build performant, maintainable apps.
 ```
 
 ```
