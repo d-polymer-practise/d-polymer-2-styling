@@ -15,17 +15,37 @@
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
+        html,body {
+          padding: 0;
+          margin: 0;
+        }
+        header {
+          background-color: lightblue;
+          padding: 20px;
+        }
+
+        footer {
+          background-color: lightgray;
+          padding: 30px;
+        }
       </style>
     </custom-style>
   </head>
   <body>
+    <!-- HEADER -->
+    <header>Header</header>
+
+    <section>
     <div class="vertical-section-container centered">
-      <h3>Basic my-project demo</h3>
       <demo-snippet>
         <template>
           <my-project></my-project>
         </template>
       </demo-snippet>
     </div>
+  </section>
+
+    <!-- FOOTER -->
+    <footer>Footer</footer>
   </body>
 </html>

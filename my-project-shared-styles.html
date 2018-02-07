@@ -1,7 +1,5 @@
-
 <dom-module id="my-shared-styles">
     <template>
-        <custom-style>
             <style is="custom-style">
                 :host {
                     /* APPLICATION BASE FONT FAMILY */
@@ -12,16 +10,15 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
             ; */
-
-
-                    /*  APPLICATION BASE FONT SIZE  */
+                    /*  APPLICATION BASE FONT SIZE - TYPOGRAPHY.HTML */
                     @apply --paper-font-body1;
                     /* 14PX / 400 */
+
                     /* @apply --paper-font-body2; */
                     /* 14PX / 500 */
-
-
                     /*  PROJECT COLOR VARIABLES  */
+
+                    /*  APPLICATION BASE COLOR VARIABLES */
                     --primary-text-color: #2f2f2f;
                     --primary-background-color: gray;
                     --secondary-text-color: blue;
@@ -68,23 +65,18 @@
 
                     /*  OVERRIDE COMPONENT BUTTON VARIABLE  */
                     /* --my-button-ink-color: var(--paper-button-ink-color);
-            --my-button-bg-color: purple; */
-
+                        --my-button-bg-color: purple; */
 
 
                     /*  SPINNER VARIABLES  */
                     --paper-spinner-layer-1-color: grey;
-            --paper-spinner-layer-2-color: purple;
-            --paper-spinner-layer-3-color: pink;
-            --paper-spinner-layer-4-color: black;
+                    --paper-spinner-layer-2-color: purple;
+                    --paper-spinner-layer-3-color: pink;
+                    --paper-spinner-layer-4-color: black;
                     --paper-spinner-stroke-width: 2px;
 
                     /*  SPINNER LITE VARIABLES  */
                     /* --paper-spinner-color: green; */
-
-
-                    
-
                     /*  IRON ICON  */
                     --iron-icon: {
                         /* MIXIN */
@@ -94,7 +86,7 @@
                     --iron-icon-height: 50px;
                     --iron-icon-fill-color: orange;
                     --iron-icon-stroke-color: lightgrey;
-                    
+
                 }
 
                 h1 {
@@ -126,6 +118,5 @@
                     height: 20px;
                 }
             </style>
-        </custom-style>
     </template>
 </dom-module>
