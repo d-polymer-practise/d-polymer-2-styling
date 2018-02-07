@@ -60,19 +60,19 @@ CSS Custom Properties uses simple -- (two hypens)
 - CSS variables is written as var()
 
 .box {
-    --box-color: #ff5678;
-    --box-padding: 10px;
+    padding: var(--box-padding, 10px);
+    color: var(--box-color, #ff0088);
 }
 
 - CSS mixin
---my-box: {
+--box: {
     --box-color: #ff5678;
     --box-padding: 10px;
 }
 
 - apply mixin
 .your-box {
-    @apply --my-box;
+    @apply --box;
 }
 ```
 
@@ -83,8 +83,35 @@ Browser Support
 ```
 
 ```
+What is Polymer?
+Polymer is a library for creating Web Components. ... Instead, it focuses on allowing you to create rich, powerful, reusable web components, which could be used to build webapps
 ```
 
+```
+Web Components
+- Should be re usable with respect to styling and functionality
+- So will be able to reuse it in any project
+- Dont style elements if not necessary
+- Create style only if it is designed intentionally as per requirement
+- Use variables with fallback values
+- Dont define those variables in component
+- That means fallback values will style your component
+```
+
+```
+Project Shared Style
+- Its a theme style of the project
+- We can pre define the variables style of the elements.
+- Keep design of the element same all through
+- If the external component has variables with fallback values shared style will not affect it
+- If you need to override those use the redefine the variables of the component in shared style
+```
+
+```
+```
+
+```
+```
 
 
 
