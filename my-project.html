@@ -26,27 +26,51 @@
         /*  COMPONENT PAPER BUTTON VARIABLES  */
         --paper-button-ink-color: var(--my-button-ink-color, darkblue);
         --paper-button: {
-            background-color: var(--my-button-bg-color, lightblue);
-        };
+          background-color: var(--my-button-bg-color, lightblue);
+        }
+        ;
+
+        --my-custom-box-theme: {
+          background-color: var(--my-custom-box-bg-color, green);
+          border-radius: 4px;
+          border: 1px solid var(--my-custom-box-border-color, red);
+          padding: 10px;
+          color: var(--my-custom-box-color, #fff);
+          margin-bottom: 20px;
+        }
+        ;
+      }
+
+      .my-custom-box {
+        @apply --my-custom-box-theme;
       }
     </style>
+
+    <!-- CUSTOM HTML -->
+    <div class="my-custom-box">
+      <h1>My Custom box</h1>
+      <p>Praragraph- Lorem ipsum dolor sit amet consectetur
+      </p>
+    </div>
 
     <!-- CARD 1 -->
     <paper-card heading="PAPER CARD HEADING">
       <div class="card-content">
         <h1>H1 heading</h1>
-        <p>Applied <strong>--paper-font-headline</strong> mixin to H1</p>
+
+        <p>Applied
+          <strong>--paper-font-headline</strong> mixin to H1</p>
 
         <h2>H2 heading</h2>
-        <p>Applied <strong>--paper-font-title</strong> mixin to H2</p>
+        <p>Applied
+          <strong>--paper-font-title</strong> mixin to H2</p>
 
         <h3>H3 heading</h3>
-        <p>Praragraph-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod tempore ab ipsa labore
-            voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
-          </p>
+        <p>Praragraph- Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod
+          tempore ab ipsa labore voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
+        </p>
 
-        <strong>Strong Text</strong>  
+        <strong>Strong Text</strong>
 
         <a href="#">Link color</a>
 
@@ -56,7 +80,7 @@
         <h3>Lite spinner single color - custom size</h3>
         <paper-spinner-lite class="spinner-large" active></paper-spinner-lite>
 
-          <div>&nbsp;</div>
+        <div>&nbsp;</div>
         <paper-button>button</paper-button>
 
         <h3>Iron icons</h3>
@@ -66,7 +90,7 @@
         <h3>Editor icons</h3>
         <iron-icon icon="editor:attach-file"></iron-icon>
         <iron-icon icon="editor:border-all"></iron-icon>
-        
+
       </div>
     </paper-card>
 

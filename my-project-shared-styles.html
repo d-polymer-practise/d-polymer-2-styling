@@ -2,7 +2,7 @@
     <template>
             <style is="custom-style">
                 :host {
-                    /* COLOR VARIABLES  */
+                    /* COLOR VARIABLES  ------ 1 -----*/
                     --primary-text-color: rgba(0,0,0,.80);
                     --primary-background-color: gray;
                     --secondary-text-color: rgba(0,0,0,.50);
@@ -11,23 +11,30 @@
                     --success-color: green;
                     --link-color: blue;
                     
-                    /* APPLICATION BASE FONT FAMILY AND COLOR*/
+                    /* APPLICATION BASE FONT FAMILY AND COLOR ------ 2 ------*/
                     @apply --paper-font-common-base;
                     color: var(--primary-text-color);
 
-                    /*  YOU CAN OVERRIDE THIS MIXIN TO USE NEW FONT FAMILY  */
+                    /*  YOU CAN OVERRIDE THIS MIXIN TO USE NEW FONT FAMILY  ----- 3 ---- */
                     /* --paper-font-common-base: {
                 font-family: Arial, Helvetica, sans-serif;
             }
             ; */
-                    /*  APPLICATION BASE FONT SIZE - TYPOGRAPHY.HTML */
+                    /*  APPLICATION BASE FONT SIZE - TYPOGRAPHY.HTML ----- 4 ------*/
                     @apply --paper-font-body1;
                     /* 14PX / 400 */
 
                     /* @apply --paper-font-body2; */
                     /* 14PX / 500 */
 
-                    /*  PAPER CARD VARIABLES  */
+
+                    /* MY TOOLBAR OVERRIDE ------- 5 -----*/
+                    /* --my-custom-box-bg-color: lightgray;
+                    --my-custom-box-color: red;
+                    --my-custom-box-border-color: green;
+                     */
+
+                    /*  PAPER CARD VARIABLES ----- 6 ----- */
                     --paper-card-background-color: #FFF;
                     --paper-card-header-color: green;
                     --paper-card-header: {
@@ -47,14 +54,14 @@
                     ;
 
 
-                    /*  OVERRIDE COMPONENT STYLE VARIABLE  */
+                    /*  OVERRIDE COMPONENT STYLE VARIABLE ----- 7 -----  */
                     /* --my-card-bg-color: var(--paper-card-background-color);
                 --my-card-header-color: var(--paper-card-header-color); */
                     /* --my-card-bg-color: pink;
                 --my-card-header-color: purple; */
 
 
-                    /*  BUTTON VARIABLES  */
+                    /*  BUTTON VARIABLES ----- 8 ------ */
                     --paper-button-ink-color: black;
                     --paper-button: {
                         /* MIXIN */
@@ -63,12 +70,12 @@
                     }
                     ;
 
-                    /*  OVERRIDE COMPONENT BUTTON VARIABLE  */
+                    /*  OVERRIDE COMPONENT BUTTON VARIABLE ------ 9 ------------ */
                     /* --my-button-ink-color: var(--paper-button-ink-color);
                         --my-button-bg-color: purple; */
 
 
-                    /*  SPINNER VARIABLES  */
+                    /*  SPINNER VARIABLES ------ 10 -------- */
                     --paper-spinner-layer-1-color: grey;
                     --paper-spinner-layer-2-color: purple;
                     --paper-spinner-layer-3-color: pink;
@@ -90,9 +97,9 @@
 
                 }
 
-                /* ADDITIONAL STYLES GOES HERE*/
+                /* ADDITIONAL STYLES GOES HERE -------- 11 --------*/
                 a {
-                    color: var(--secondary-text-color);
+                    color: var(--link-color);
                 }
                 h1 {
                     @apply --paper-font-headline;
@@ -106,7 +113,7 @@
                     @apply --paper-font-subhead;
                 }
 
-                /* CUSTOM SPINNER SIZES */
+                /* CUSTOM SPINNER SIZES ------- 12 -------- */
 
                 .spinner-large {
                     width: 50px;
