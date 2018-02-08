@@ -108,6 +108,14 @@ Project Shared Style
 ```
 
 ```
+Create an project base svg icon set here
+https://poly-icon.appspot.com
+
+Create a html file named myicons.html in project
+Copy the icon generated code in html file
+and use it
+<link rel="import" href="/path/to/myicons.html">
+<iron-icon icon="myicons:ICON_NAME"></iron-icon>
 ```
 
 ```
