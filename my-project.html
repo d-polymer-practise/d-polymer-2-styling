@@ -1,13 +1,14 @@
 <link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../paper-spinner/paper-spinner.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
 <link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../iron-icons/editor-icons.html">
 <link rel="import" href="../paper-card/paper-card.html">
 <link rel="import" href="../paper-spinner/paper-spinner-lite.html">
 
 <!-- INCLUDE MY PROJECT SHARED STYLE -->
-<link rel="import" href="my-project-shared-styles.html">
+<!-- <link rel="import" href="my-project-shared-styles.html"> -->
 
 <dom-module id="my-project">
   <template>
@@ -16,83 +17,90 @@
         display: block;
 
         /*  COMPONENT PAPER CARD VARIABLES  */
-        --paper-card-background-color: var(--my-card-bg-color, #fffdc9);
-        --paper-card-header-color: var(--my-card-header-color, red);
+        --paper-card-background-color: var(--my-project-card-bg-color);
+        --paper-card-header-color: var(--my-project-card-header-color);
         --paper-card-header: {
           /* MIXIN */
         }
         ;
 
         /*  COMPONENT PAPER BUTTON VARIABLES  */
-        --paper-button-ink-color: var(--my-button-ink-color, darkblue);
+        --paper-button-ink-color: var(--my-project-button-ink-color);
         --paper-button: {
-          background-color: var(--my-button-bg-color, lightblue);
+          background-color: var(--my-project-button-bg-color);
         }
         ;
 
-        --my-custom-box-theme: {
-          background-color: var(--my-custom-box-bg-color, green);
+        /* MY BOX MIXIN */
+        --my-project-custom-box: {
+          background-color: var(--my-project-custom-box-bg-color);
           border-radius: 4px;
-          border: 1px solid var(--my-custom-box-border-color, red);
+          border: 1px solid var(--my-project-custom-box-border-color, lightblue);
           padding: 10px;
-          color: var(--my-custom-box-color, #fff);
+          color: var(--my-project-custom-box-color);
           margin-bottom: 20px;
         }
         ;
       }
 
+      /* APPLY DEFINED MIXIN */
+
       .my-custom-box {
-        @apply --my-custom-box-theme;
+        @apply --my-project-custom-box;
       }
     </style>
 
-    <!-- CUSTOM HTML -->
+
     <div class="my-custom-box">
-      <h1>My Custom box</h1>
-      <p>Praragraph- Lorem ipsum dolor sit amet consectetur
+      <h1>H1 heading</h1>
+
+      <p>Applied
+        <strong>--paper-font-headline</strong> mixin to H1</p>
+
+      <h2>H2 heading</h2>
+      <p>Applied
+        <strong>--paper-font-title</strong> mixin to H2</p>
+
+      <h3>H3 heading</h3>
+      <p>Praragraph- Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod
+        tempore ab ipsa labore voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
       </p>
     </div>
 
-    <!-- CARD 1 -->
-    <paper-card heading="PAPER CARD HEADING">
-      <div class="card-content">
-        <h1>H1 heading</h1>
+    <div class="my-custom-box">
+      <strong>Strong Text</strong>
 
-        <p>Applied
-          <strong>--paper-font-headline</strong> mixin to H1</p>
+      <a href="#">Link color</a>
 
-        <h2>H2 heading</h2>
-        <p>Applied
-          <strong>--paper-font-title</strong> mixin to H2</p>
+    </div>
 
-        <h3>H3 heading</h3>
-        <p>Praragraph- Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda rem dicta fugiat quas quod
-          tempore ab ipsa labore voluptatibus suscipit, animi molestias aliquid nam delectus nobis illo consequuntur? Porro!
-        </p>
+    <div class="my-custom-box">
 
-        <strong>Strong Text</strong>
+      <h3>Spinner multi color</h3>
+      <paper-spinner class="spinner-small" active></paper-spinner>
 
-        <a href="#">Link color</a>
+      <h3>Lite spinner single color - custom size</h3>
+      <paper-spinner-lite class="spinner-large" active></paper-spinner-lite>
 
-        <h3>Spinner multi color</h3>
-        <paper-spinner class="spinner-small" active></paper-spinner>
+    </div>
 
-        <h3>Lite spinner single color - custom size</h3>
-        <paper-spinner-lite class="spinner-large" active></paper-spinner-lite>
+    <div class="my-custom-box">
+      <paper-button raised>button</paper-button>
 
-        <div>&nbsp;</div>
-        <paper-button>button</paper-button>
+    </div>
 
-        <h3>Iron icons</h3>
-        <iron-icon icon="thumb-up"></iron-icon>
-        <iron-icon icon="star"></iron-icon>
+    <div class="my-custom-box">
+      <h3>Iron icons</h3>
+      <iron-icon icon="thumb-up"></iron-icon>
+      <iron-icon icon="star"></iron-icon>
+    </div>
 
-        <h3>Editor icons</h3>
-        <iron-icon icon="attach-file"></iron-icon>
-        <iron-icon icon="border-all"></iron-icon>
+    <div class="my-custom-box">
+      <h3>Editor icons</h3>
+      <iron-icon icon="editor:attach-file"></iron-icon>
+      <iron-icon icon="editor:border-all"></iron-icon>
+    </div>
 
-      </div>
-    </paper-card>
 
 
 

@@ -26,9 +26,7 @@ Custom CSS Properties
 https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 
 https://www.sitepoint.com/practical-guide-css-variables-custom-properties/
-```
-```
-https://www.webcomponents.org/element/PolymerElements/paper-card
+
 ```
 
 
@@ -51,26 +49,27 @@ Limitations of Preprocessors
 ```
 
 ```
-These limiations made a base to invent CSS Custom Properties by a community
+These limiations made a base to invent CSS Custom Properties by a WWW community
 ```
 
 ```
 CSS Custom Properties uses simple -- (two dash)
-- learn once and implement through all browsers
+- learn once and implement and works through all browsers
 - CSS variables is written as var()
 
+///Variables with fallback value
 .box {
     padding: var(--box-padding, 10px);
     color: var(--box-color, #ff0088);
 }
 
-- CSS mixin
+///CSS mixin
 --box: {
     padding: var(--box-padding, 10px);
     color: var(--box-color, #ff0088);
 }
 
-- apply mixin
+///apply mixin
 .your-box {
     @apply --box;
 }
@@ -88,23 +87,23 @@ Polymer is a JavaScript library that helps you create custom reusable HTML eleme
 ```
 
 ```
-Web Components
-- Should be re usable with respect to styling and functionality
-- So will be able to reuse it in any project
-- Dont style elements if not necessary
-- Create style only if it is designed intentionally as per requirement
-- Use variables with fallback values
-- Dont define those variables in component
-- That means fallback values will style your component
+Web Components Basic things to consider
+- Should be re-usable with respect to styling and functionality.
+- So will be able to use it in any project and multiple projects.
+- Dont style elements if you don't have any specified VD from designer, keep it raw.
+- Create CSS styles only if it is designed intentionally as per requirement.
+- If you need to write a CSS styles than use variables with fallback values.
+- That means fallback values will be applied in your component.
+- And those variables will be used in the project theme CSS style to override the fallback value of that component.
 ```
 
 ```
 Project Shared Style
-- Its a theme style of the project
+- Its a custom theme style of the project.
 - We can pre define the variables style of the elements.
-- Keep design of the element same all through
-- If the external component has variables with fallback values shared style will not affect it
-- If you need to override those use the redefine the variables of the component in shared style
+- Keep design of the element same all through.
+- If the external component has variables with fallback values shared style will not affect it.
+- If you need to override those use the redefine the variables of the component in shared style.
 ```
 
 ```
